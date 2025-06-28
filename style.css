@@ -1,0 +1,115 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    background-image: url('https://source.unsplash.com/1600x900/?login,technology');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #333;
+}
+
+
+.login-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+
+.forgot-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.forgot-link a,
+.login-link a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-link a:hover,
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #2d720b;
+}
+
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 30px 20px;
+    }
+
+    .forgot-link {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
